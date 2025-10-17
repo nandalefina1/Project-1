@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Biaya Listrik Rumah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔌 Kalkulator Biaya Listrik Harian</h1>
+        <p>Hitung perkiraan biaya listrik untuk satu alat elektronik.</p>
+        
+        <div class="input-group">
+            <label for="daya">Daya Alat (Watt):</label>
+            <input type="number" id="daya" value="100" min="1">
+        </div>
+
+        <div class="input-group">
+            <label for="jam">Durasi Penggunaan Harian (Jam):</label>
+            <input type="number" id="jam" value="8" min="0">
+        </div>
+
+        <div class="input-group">
+            <label for="tarif">Tarif Listrik per kWh (Rp):</label>
+            <input type="number" id="tarif" value="1444.70" min="0">
+        </div>
+
+        <button id="hitung-btn">Hitung Biaya</button>
+
+        <div class="result" id="result">
+            <p>Masukkan data dan tekan tombol "Hitung Biaya".</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
